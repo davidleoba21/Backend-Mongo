@@ -22,6 +22,8 @@ app.get('/', (req, res) => {
     res.send('Estamos Conectados a la web')
 })
 
-app.listen(5500, () => {
+const port = process.env.PORT || 5500
+
+app.listen(port, () => {
     console.log('el Servidor esta conectado http://127.0.0.1:5500')
 })
